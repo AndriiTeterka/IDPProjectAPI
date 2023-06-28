@@ -18,21 +18,21 @@ public class DataGenerator {
                 .build();
     }
 
-    public static PostPojo createRandomPost() {
+    public static PostPojo createRandomPostByUserId(int id) {
         Faker faker = new Faker();
         return PostPojo.builder()
                 .id(faker.number().numberBetween(1, 999))
-                .userId(faker.number().numberBetween(1, 999))
+                .userId(id)
                 .title(faker.lorem().word())
                 .body(faker.lorem().paragraph())
                 .build();
     }
 
-    public static CommentPojo createRandomComment() {
+    public static CommentPojo createRandomCommentByPostId(int id) {
         Faker faker = new Faker();
         return CommentPojo.builder()
                 .id(faker.number().numberBetween(1, 999))
-                .postId(faker.number().numberBetween(1, 999))
+                .postId(id)
                 .name(faker.name().name())
                 .email(faker.internet().emailAddress())
                 .body(faker.lorem().paragraph())
