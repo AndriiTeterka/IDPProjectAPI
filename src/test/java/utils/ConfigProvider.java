@@ -17,6 +17,11 @@ public interface ConfigProvider {
     String CURRENCY_NAMES_FILE_PATH = readConfig().getString("currencyNamesFilePath");
 
 
+    //VerifyAllCharactersCount
+    String GRAPHQL_URL = readConfig().getString("graphQLUrl");
+    String RICK_AND_MORTY_CHARACTERS_FILE_PATH = readConfig().getString("rickAndMortyCharactersFilePath");
+
+
     static Config readConfig() {
         return ConfigFactory.load("testData.conf");
     }

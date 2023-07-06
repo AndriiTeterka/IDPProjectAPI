@@ -1,0 +1,3 @@
+{
+  "query": "{\n  characters(page: 2, filter: { name: \"{name}\" }) {\n    info {\n      count\n    }\n    results {\n      name\n    }\n  }\n}"
+}
