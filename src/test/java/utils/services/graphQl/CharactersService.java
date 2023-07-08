@@ -10,6 +10,15 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
+/**
+ * This class provides methods to interact with the GraphQL characters service.
+ * It extends the GraphQLService class.
+ * The CharactersService class is responsible for sending GraphQL requests related to characters.
+ * It has methods to retrieve the names and counts of all characters, Morty characters, and Rick characters.
+ * Note: This class uses the ConfigProvider class to retrieve the file path for the Rick and Morty characters request.
+ * The GraphQLService class provides the base functionality for sending GraphQL requests.
+ * The REQUEST_SPECIFICATION is inherited from the GraphQLService class and is used for request specification.
+ */
 public class CharactersService extends GraphQLService {
 
     String rickAndMortyRequest = new String(Files.readAllBytes(Paths.get(ConfigProvider.RICK_AND_MORTY_CHARACTERS_FILE_PATH)));

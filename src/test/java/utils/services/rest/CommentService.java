@@ -8,6 +8,16 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
+/**
+ * This class provides methods to interact with the REST API for comments.
+ * It extends the RestService class.
+ * The CommentService class is responsible for sending REST requests related to comments.
+ * It has methods to retrieve the comment list, get a comment by its ID, create a new comment,
+ * update an existing comment, delete a comment by its ID, and delete all comments.
+ * Note: This class uses the ConfigProvider class to retrieve the access token for authentication.
+ * The RestService class provides the base functionality for sending REST requests.
+ * The REQUEST_SPECIFICATION is inherited from the RestService class and is used for request specification.
+ */
 public class CommentService extends RestService {
 
     @Override

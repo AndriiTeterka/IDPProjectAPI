@@ -8,6 +8,16 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
+/**
+ * This class provides methods to interact with the REST API for posts.
+ * It extends the RestService class.
+ * The PostService class is responsible for sending REST requests related to posts.
+ * It has methods to retrieve the post list, get a post by its ID, create a new post,
+ * update an existing post, delete a post by its ID, and delete all posts.
+ * Note: This class uses the ConfigProvider class to retrieve the access token for authentication.
+ * The RestService class provides the base functionality for sending REST requests.
+ * The REQUEST_SPECIFICATION is inherited from the RestService class and is used for request specification.
+ */
 public class PostService extends RestService {
 
     @Override

@@ -8,6 +8,16 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
+/**
+ * This class provides methods to interact with the REST API for users.
+ * It extends the RestService class.
+ * The UserService class is responsible for sending REST requests related to users.
+ * It has methods to retrieve the user list, get a user by their ID, create a new user,
+ * update an existing user, delete a user by their ID, and delete all users.
+ * Note: This class uses the ConfigProvider class to retrieve the access token for authentication.
+ * The RestService class provides the base functionality for sending REST requests.
+ * The REQUEST_SPECIFICATION is inherited from the RestService class and is used for request specification.
+ */
 public class UserService extends RestService {
 
     @Override

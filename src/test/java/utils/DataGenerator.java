@@ -5,6 +5,13 @@ import models.CommentPojo;
 import models.PostPojo;
 import models.UserPojo;
 
+/**
+ * This class provides utility methods for generating random data for different models.
+ * The createRandomUser method generates a random UserPojo object with random values for id, name, email, gender, and status.
+ * The createRandomPostByUserId method generates a random PostPojo object with a specified userId and random values for id, title, and body.
+ * The createRandomCommentByPostId method generates a random CommentPojo object with a specified postId and random values for id, name, email, and body.
+ * These methods utilize the JavaFaker library to generate realistic and random data.
+ */
 public class DataGenerator {
 
     public static UserPojo createRandomUser() {
